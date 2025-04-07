@@ -6,23 +6,40 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		451E4DEB2DA43183004EF2DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 451E4DE22DA43183004EF2DF /* AppDelegate.m */; };
+		451E4DEC2DA43183004EF2DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 451E4DE42DA43183004EF2DF /* main.m */; };
+		451E4DED2DA43183004EF2DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 451E4DE92DA43183004EF2DF /* ViewController.m */; };
+		451E4DEE2DA43183004EF2DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451E4DE32DA43183004EF2DF /* Assets.xcassets */; };
+		451E4DEF2DA43183004EF2DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451E4DE62DA43183004EF2DF /* Main.storyboard */; };
+		451E4DF32DA431E2004EF2DF /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451E4DF22DA431E2004EF2DF /* ModelIO.framework */; };
+		451E4DF52DA4323A004EF2DF /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451E4DF42DA4323A004EF2DF /* MetalKit.framework */; };
+		451E4DF72DA4324A004EF2DF /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451E4DF62DA4324A004EF2DF /* Metal.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		451E4DCB2DA4316D004EF2DF /* RaytraceMotionCustom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaytraceMotionCustom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		451E4DE12DA43183004EF2DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		451E4DE22DA43183004EF2DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		451E4DE32DA43183004EF2DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		451E4DE42DA43183004EF2DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		451E4DE52DA43183004EF2DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		451E4DE72DA43183004EF2DF /* RaytraceMotionCustom.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RaytraceMotionCustom.entitlements; sourceTree = "<group>"; };
+		451E4DE82DA43183004EF2DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		451E4DE92DA43183004EF2DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		451E4DF22DA431E2004EF2DF /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+		451E4DF42DA4323A004EF2DF /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		451E4DF62DA4324A004EF2DF /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		451E4DCD2DA4316D004EF2DF /* RaytraceMotionCustom */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RaytraceMotionCustom;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		451E4DC82DA4316D004EF2DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451E4DF32DA431E2004EF2DF /* ModelIO.framework in Frameworks */,
+				451E4DF72DA4324A004EF2DF /* Metal.framework in Frameworks */,
+				451E4DF52DA4323A004EF2DF /* MetalKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +49,9 @@
 		451E4DC22DA4316D004EF2DF = {
 			isa = PBXGroup;
 			children = (
-				451E4DCD2DA4316D004EF2DF /* RaytraceMotionCustom */,
+				451E4DEA2DA43183004EF2DF /* RaytraceMotionCustom */,
+				451E4DF02DA4319C004EF2DF /* Renderer */,
+				451E4DF12DA431E2004EF2DF /* Frameworks */,
 				451E4DCC2DA4316D004EF2DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +62,38 @@
 				451E4DCB2DA4316D004EF2DF /* RaytraceMotionCustom.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		451E4DEA2DA43183004EF2DF /* RaytraceMotionCustom */ = {
+			isa = PBXGroup;
+			children = (
+				451E4DE12DA43183004EF2DF /* AppDelegate.h */,
+				451E4DE22DA43183004EF2DF /* AppDelegate.m */,
+				451E4DE32DA43183004EF2DF /* Assets.xcassets */,
+				451E4DE42DA43183004EF2DF /* main.m */,
+				451E4DE62DA43183004EF2DF /* Main.storyboard */,
+				451E4DE72DA43183004EF2DF /* RaytraceMotionCustom.entitlements */,
+				451E4DE82DA43183004EF2DF /* ViewController.h */,
+				451E4DE92DA43183004EF2DF /* ViewController.m */,
+			);
+			path = RaytraceMotionCustom;
+			sourceTree = "<group>";
+		};
+		451E4DF02DA4319C004EF2DF /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		451E4DF12DA431E2004EF2DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				451E4DF62DA4324A004EF2DF /* Metal.framework */,
+				451E4DF42DA4323A004EF2DF /* MetalKit.framework */,
+				451E4DF22DA431E2004EF2DF /* ModelIO.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +110,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				451E4DCD2DA4316D004EF2DF /* RaytraceMotionCustom */,
 			);
 			name = RaytraceMotionCustom;
 			packageProductDependencies = (
@@ -108,6 +156,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451E4DEE2DA43183004EF2DF /* Assets.xcassets in Resources */,
+				451E4DEF2DA43183004EF2DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,10 +168,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451E4DEB2DA43183004EF2DF /* AppDelegate.m in Sources */,
+				451E4DEC2DA43183004EF2DF /* main.m in Sources */,
+				451E4DED2DA43183004EF2DF /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		451E4DE62DA43183004EF2DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				451E4DE52DA43183004EF2DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		451E4DDC2DA4316E004EF2DF /* Debug */ = {
